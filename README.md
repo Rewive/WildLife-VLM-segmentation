@@ -92,7 +92,7 @@ A detailed analysis of the provided code reveals the following components, optim
 **Models Analyzed**:
 1. **Florence-2** (`microsoft/Florence-2-large-ft`)
 2. **SAM** (`sam2.1_l.pt`)
-3. **YOLO** (`best.pt`)
+3. **** (`best.pt`)
 
 #### Florence-2
 - **Architecture**: Vision-language model combining a vision encoder and language decoder, designed for tasks like object detection and segmentation.
@@ -119,11 +119,11 @@ A detailed analysis of the provided code reveals the following components, optim
 - **Parameters**:
   1. Estimated: ~300M parameters (based on SAM-L model specs).
   2. Memory Footprint: ~1.2 GB in FP16.
-- **Role**: Generates precise segmentation masks given bounding box prompts from Florence-2 or YOLO.
+- **Role**: Generates precise segmentation masks given bounding box prompts from Florence-2 or .
 - **Precision**: FP16, aligned with GPU optimization.
 
-#### YOLO
-- **Architecture**: Likely YOLOv8 (based on Ultralytics conventions), a single-stage detector optimized for speed and accuracy.
+#### 
+- **Architecture**: Likely YOLOv11 (based on Ultralytics conventions), a single-stage detector optimized for speed and accuracy.
 - **Checkpoint**: `best.pt` (custom-trained, details not specified).
 - **Parameters**:
   1. Estimated: ~25-50M parameters (typical for YOLOv11-L or YOLOv11-X).
